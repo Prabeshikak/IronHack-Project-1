@@ -1,6 +1,4 @@
-Dice Game
-
-By Prabeshika Koirala
+"Dice Game"
 
 Description:
 
