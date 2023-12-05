@@ -16,3 +16,4 @@ Technologies Used:
 2. CSS
 3. JavaScript
 4. DOM Manipulation
+5. JS Classes

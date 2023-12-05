@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dice Game</title>
   </head>
   <body>
@@ -10,7 +12,6 @@
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Player 1</h2>
         <p class="score" id="score--0">43</p>
-        <p class="player-0-rolled-1"><h3>Sorry! You rolled 1</h3></p>
         <div class="current">
           <p class="current-label">Current</p>
           <p class="current-score" id="current--0">0</p>
@@ -19,32 +20,34 @@
       <section class="player player--1">
         <h2 class="name" id="name--1">Player 2</h2>
         <p class="score" id="score--1">24</p>
-        <p class="player-1-rolled-1"><h3>Oops! You rolled 1</h3></p>
         <div class="current">
           <p class="current-label">Current</p>
           <p class="current-score" id="current--1">0</p>
         </div>
-        <div class="rules-panel" style="display:none">
-          <h3>Goal</h3>
-          <p>Be the first player to reach 100 score.</p>
-        </div>
-        <div class="rules-panel" style="display:none">
-          <h3>Gameplay</h3>
-          <p>On a turn, a player rolls the dice repeatedly until either:</p>
-          <li>1 is rolled</li>
-          <li>The player chooses to hold(stop rolling)</li>
-          <br>
-          <p>If the playe chooses to hold, all of the points rolled during that turn are added to his or her score.</p>
-          <button class="btn-back"><i class="ion-ios-arrow-left color-0"></i>Back to game</button>
-        </div>
       </section>
 
-      <img src="./Images/dice-5.png" alt="Playing dice" class="dice" />
-      <button class="btn btn--new">🔄 New game </button>
+      <img src="dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--rules">🔄 Rules</button>
+      <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
-      <button class="btn-rules">✍🏻 Rules</button>
+      <button class="btn btn--back">📥 Back</button>
 
+      <!--  test -->
+      <section class="game_main">
+        <button class="game_rule">Rules</button>
+      </section>
+      <section class="rule_set">
+        <div>
+          GOAL BE THE FIRST PLAYER TO REACH 50 POINTS. GAMEPLAY ON A TURN, A
+          PLAYER ROLLS THE DIE REPEATEDLY UNTIL EITHER: 1 IS ROLLED THE PLAYER
+          CHOOSES TO HOLD (STOP ROLLING) IF THE PLAYER CHOOSES TO HOLD, ALL OF
+          THE POINTS ROLLED DURING THAT TURN ARE ADDED TO HIS OR HER SCORE.
+        </div>
+        <button class="go_back">Go Back</button>
+      </section>
+      <!--  test -->
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

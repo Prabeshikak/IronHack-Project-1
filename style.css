@@ -110,6 +110,9 @@ main {
   margin-right: 0.7rem;
 }
 
+.btn--rules {
+  top: -1rem;
+}
 .btn--new {
   top: 4rem;
 }
@@ -118,6 +121,9 @@ main {
 }
 .btn--hold {
   top: 46.1rem;
+}
+.btn--back {
+  top: 54.1rem;
 }
 
 .btn:active {
@@ -148,4 +154,24 @@ main {
 }
 .hidden {
   display: none;
+}
+
+/*------*/
+
+.game-rules {
+  display: block;
+
+  margin-top: 800px;
+}
+
+.game_rule {
+  color: #131111;
+  background-color: #e9f0ea;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
