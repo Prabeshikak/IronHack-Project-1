@@ -158,12 +158,6 @@ main {
 
 /*------*/
 
-.game-rules {
-  display: block;
-
-  margin-top: 800px;
-}
-
 .game_rule {
   color: #131111;
   background-color: #e9f0ea;

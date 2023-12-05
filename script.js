@@ -45,11 +45,6 @@ class DiceGame {
     this.player1El.classList.remove("player--winner");
     this.player0El.classList.add("player--active");
     this.player1El.classList.remove("player--active");
-
-    //  test
-    this.sectionRuleSet.classList.add("hidden");
-
-    // test
   }
 
   toggleGameRules() {
@@ -67,26 +62,7 @@ class DiceGame {
     this.btnRoll.addEventListener("click", () => this.rollDice());
     this.btnHold.addEventListener("click", () => this.holdScore());
     this.btnNew.addEventListener("click", () => this.init());
-
-    //  test
-    this.btnGoBack.addEventListener("click", () => this.showMainGame());
-    this.btnGameRule.addEventListener("click", () => this.showGameRules());
-    // test
   }
-
-  //  test
-  showMainGame() {
-    //this.sectionRuleSet.classList.add("hidden");
-    //this.sectionGameMain.classList.remove("hidden");
-    this.sectionRuleSet.classList.add("hidden");
-    this.sectionGameMain.classList.remove("hidden");
-  }
-
-  showGameRules() {
-    this.sectionRuleSet.classList.remove("hidden");
-    this.sectionGameMain.classList.add("hidden");
-  }
-  // test
 
   rollDice() {
     if (this.playing) {
@@ -127,6 +103,15 @@ class DiceGame {
       }
     }
   }
+  /*showRules() {
+    document.querySelector(".popuptext").classList.remove("hiderules");
+    document.querySelector(".popuptext").classList.add("showrules");
+  }
+
+  hideRules() {
+    document.querySelector(".popuptext").classList.remove("showrules");
+    document.querySelector(".popuptext").classList.add("hiderules");
+  }*/
 }
 
 const game = new DiceGame();
